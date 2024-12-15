@@ -1,0 +1,185 @@
+
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>SSA - Web 2.0</title>
+        <meta name="theme-color" content="#ff0202">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> 
+        <link rel="stylesheet" href="css\style.css" />
+        <link rel="shortcut icon" href="img/icon.ico" />
+        <link href="css\bootstrap.css" rel="stylesheet">    
+        <link rel="stylesheet" href="css\jquery.ui.all.css">
+        <link href="asset\css\bootstrap.min.css" rel="stylesheet">    
+        <link href="asset\css\sb-admin.css" rel="stylesheet">    
+        <link href="asset\font-awesome\css\font-awesome.min.css" rel="stylesheet" type="text/css">
+        <script type="text\javascript" src="asset\js\sweetalert.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+             body {
+            background: repeating-linear-gradient(
+                135deg,
+                #f5f5f5,
+                #f5f5f5 3px,
+                #ffffff 3px,
+                #ffffff 5px
+            );
+        }
+        .historial {
+            padding-top: 100px;
+            padding-left: 300px;
+        }
+        .historial-academico {
+            background-color: #e0f7fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            width: 80%;
+            max-width: 1000px;
+            height: 125px;
+        }
+        .historial-academico img {
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .info {
+            font-family: Arial, sans-serif;
+        }
+        .info h3 {
+            margin: 0;
+            color: #00796b;
+        }
+        .info p {
+            margin: 5px 0;
+            color: #004d40;
+        }
+        .notas {
+            background-color: white;
+            padding-top: 40px;
+            padding-left: 28px;
+            width: 100%;
+        }
+        </style>
+    </head>
+
+    <body class="body" onload="//ventanaSecundaria('http://200.7.160.40:8000/Encuesta')">
+        <nav class="navbar navbar-rojo navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="botonMenu">
+                        <span class="sr-only">Menu</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand active" href="#"><b>S.S.A.</b></a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        
+                            
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        Mis Documentos <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        
+                                            <li>
+                                                <a href="seccion2.html" onclick="javascript:winApp('A-20', '/ssa/historialAcademicoJson.do');" >
+                                                    <img src="img\tree_folder.gif" width="15px;">  Historial Academico
+                                                </a>
+                                            </li>
+                                        
+                                            
+                                        
+                                    </ul>
+                                </li>
+                            
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        Administración Personal <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        
+                                            <li>
+                                                <a href="seccion3.html" onclick="javascript:winApp('A-41', '/ssa/actualizarDatosJson.do');" >
+                                                    <img src="img\registration.png" width="15px;">  Datos Personales
+                                                </a>
+                                            </li>
+                                        
+                                    </ul>
+                                </li>
+                            
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        Inscripciones <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        
+                                            <li>
+                                                <a href="seccion4.html" onclick="javascript:winApp('A-22', '/ssa/insEstudianteJson.do');" >
+                                                    <img src="" width="15px;">  Inscripcion Materias
+                                                </a>
+                                            </li>
+                                        
+                                    </ul>
+                                </li>
+                            
+                                
+                            
+
+                        
+                        
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="fa fa-user"></span> DAYLAN SMITH HUCHANI MAMANI <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#" onclick="multipantalla()">
+                                        <span class="fa fa-user"></span>
+                                        
+                                            <input id="tipoUsuario" type="hidden" value="ESTUDIANTE" >
+                                            ESTUDIANTE
+                                        
+                                        
+                                    </a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="init.html">  <span class="fa fa-sign-out"></span> Salir</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="historial">
+            <div class="historial-academico">
+                <img src="img\foto.jpg" alt="Foto de perfil" width="100" height="100">
+                <div class="info">
+                    <h3>HISTORIAL ACADEMICO</h3>
+                    <p>Estudiante <strong>HUCHANI MAMANI DAYLAN SMITH</strong> con Cédula de Identidad No. <strong>13626149</strong> y Registro Universitario <strong>1865720</strong>.</p>
+                    <p>Pensum de Estudio <strong>2017</strong> Mención <strong>Default</strong></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="notas">
+            <img src="img\captura2.png" alt="Descripción de la imagen" class="mi-imagen">
+        </div>
+   
+        
+    </body>
+</html>
