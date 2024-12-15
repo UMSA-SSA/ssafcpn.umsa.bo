@@ -1,1 +1,1 @@
-# ssafcpn.umsa.bo
+# ssafcpn.bo
